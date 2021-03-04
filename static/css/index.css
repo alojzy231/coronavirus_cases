@@ -1,0 +1,10 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 150%;
+}
+
+input{
+    font-size: 150%;
+}

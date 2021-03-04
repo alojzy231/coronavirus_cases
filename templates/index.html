@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>Coronavirus cases</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+{% endblock %}
+
+{% block body %}
+    <h3>Coronavirus cases</h3>
+    <label for="country">Name of a country you want to check coronavirus cases: </label>
+    <br>
+    <form action="" method="POST">
+        <input type="text" name="country" id="country" placeholder="Type name of a country" autocomplete="country-name">
+        <input type="submit" value="Check">
+    </form>
+{% endblock %}

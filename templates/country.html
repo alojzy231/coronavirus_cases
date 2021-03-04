@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>{{country}}- coronavirus cases</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/country.css') }}">
+{% endblock %}
+
+
+{% block body %}
+    <h1>{{country}}</h1>
+
+    <div id="coronavirus-cases">
+        <h5>Coronavirus cases</h5>
+        <span>{{coronavirus_cases}}</span>
+    </div>
+
+    <div id="deaths">
+        <h5>Deaths</h5>
+        <span>{{deaths}}</span>
+    </div>
+
+    <div id="recovered">
+        <h5>Recovered</h5>
+        <span>{{recovered}}</span>
+    </div>
+    
+{% endblock %}
