@@ -2,38 +2,40 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 150%;
+    font-size: 4vw;
     background-image: url(../img/germ.png);
-    animation: background-animation 15s infinite linear;
+    animation: background-animation 5s infinite linear;
 }
 
 @keyframes background-animation{
     0% {
-        background-position: 208px 0;
-    }
-    40%{
-        background-position: 57 156px;
+        background-position: 0 0;
     }
     100% {
-        background-position: 0 204px;
+        background-position: 240px 240px;
     }
 }
 
 h1{
-    font-size: 500%;
     background-color: white;
 }
 
 h5{
-    font-size: 160%;
     margin: 15px;
 }
 
 h1, #coronavirus-cases, #deaths, #recovered{
     text-align: center;
-    width: 500px;
+    width: 50vw;
     padding: 25px;
     margin: 25px;
+}
+
+a{
+    width: 45vw;
+    background-color: white;
+    text-align: center;
+    padding: 5px;
 }
 
 #coronavirus-cases{
@@ -47,8 +49,4 @@ h1, #coronavirus-cases, #deaths, #recovered{
 
 #recovered{
     background-color: greenyellow;
-}
-
-input{
-    font-size: 150%;
 }

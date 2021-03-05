@@ -29,7 +29,7 @@ def country(country):
         deaths = results[1].span.text
         recovered = results[2].span.text
 
-        return render_template('country.html', country=country.capitalize(), coronavirus_cases=coronavirus_cases, deaths=deaths, recovered=recovered)
+        return render_template('country.html', country=country.upper(), coronavirus_cases=coronavirus_cases, deaths=deaths, recovered=recovered)
 
 @app.route('/favicon.ico') 
 def favicon():

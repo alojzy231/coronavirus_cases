@@ -2,9 +2,32 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 150%;
+    font-size: 4vw;
+    background-image: url(../img/germ.png);
+    animation: background-animation 5s infinite linear;
+}
+
+@keyframes background-animation{
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 240px 240px;
+    }
+}
+
+#container{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    padding-top:0;
+    position: relative;
+    top:30vh;
 }
 
 input{
-    font-size: 150%;
+    font-size: 4vw;
 }
